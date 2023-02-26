@@ -3860,6 +3860,66 @@ var beermap = {
           37.6366
         ]
       }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "New England Brewing Co",
+        "Location": {
+          "address": "175 Amity Rd, Woodbridge, CT 06525, United States",
+          "Geo Coordinates": {
+            "Latitude": 41.33963,
+            "Longitude": -72.97964
+          }
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.97964,
+          41.33963
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Eli's Brick Oven Pizza/Elixir",
+        "Location": {
+          "address": "2402 Whitney Ave, Hamden, CT 06518, United States",
+          "Geo Coordinates": {
+            "Latitude": 41.38472,
+            "Longitude": -72.90172
+          }
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.90172
+          41.38472
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Antonio's II Pizza & Grinders",
+        "Location": {
+          "address": "1 South St, Bernardston, MA 01337, United States",
+          "Geo Coordinates": {
+            "Latitude": 42.67179199997787,
+            "Longitude": -72.55454036031766
+          }
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.55454036031766
+          42.67179199997787
+        ]
+      }
     }
   ]
 }
