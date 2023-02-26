@@ -1,4 +1,4 @@
-{
+var winemap = {
   "type": "FeatureCollection",
   "features": [
     {
