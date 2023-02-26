@@ -3896,7 +3896,7 @@ var beermap = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -72.90172
+          -72.90172,
           41.38472
         ]
       }
@@ -3916,7 +3916,7 @@ var beermap = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -72.55454036031766
+          -72.55454036031766,
           42.67179199997787
         ]
       }
