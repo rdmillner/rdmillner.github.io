@@ -80,6 +80,46 @@ var winemap = {
             42.26743
           ]
         }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Cameron's Winery (1st location)",
+          "Location": {
+            "Address": "766 W Swanzey Rd, Swanzey, NH 03446, United States",
+            "Geo Coordinates": {
+              "Latitude": 42.866708059974975,
+              "Longitude": -72.33458006031077
+            }
+          }
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -72.33458006031077,
+            42.866708059974975
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Cameron's Winery (2nd location)",
+          "Location": {
+            "Address": "105 Main Street, Northfield, MA 01360, United States",
+            "Geo Coordinates": {
+              "Latitude": 42.698162,
+              "Longitude": -72.453362
+            }
+          }
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -72.453362,
+            42.698162
+          ]
+        }
       }
   ]
 }
