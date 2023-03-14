@@ -5,9 +5,11 @@
     <meta charset="utf-8" />
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin=""/>
     <link rel="stylesheet" href="plugins/Leaflet.awesome-markers/dist/leaflet.awesome-markers.css" />
-    <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js" integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM=" crossorigin=""></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.Default.css" />    <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js" integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM=" crossorigin=""></script>
     <script src="plugins/Leaflet.awesome-markers/dist/leaflet.awesome-markers.min.js"></script>
     <script src="https://kit.fontawesome.com/bc14952e14.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js"></script>
     <script src="data/js/beermap.js"></script>
     <script src="data/js/liquormap.js"></script>
     <script src="data/js/winemap.js"></script>
@@ -53,7 +55,7 @@
         prefix: 'fa'
     });
 
-        var breweries = new L.LayerGroup();
+        var breweries = new L. markerClusterGroup();
         L.geoJson(beermap, {
             onEachFeature: onEachFeature,
             pointToLayer: function (feature, latlng){
@@ -61,7 +63,7 @@
             }
         }).addTo(breweries);
 
-        var distilleries = new L.LayerGroup();
+        var distilleries = new L.markerClusterGroup();
         L.geoJson(liquormap, {
             onEachFeature: onEachFeature,
             pointToLayer: function (feature, latlng){
@@ -69,7 +71,7 @@
             }
         }).addTo(distilleries);
 
-        var wineries = new L.LayerGroup();
+        var wineries = new L.markerClusterGroup();
         L.geoJson(winemap, {
             onEachFeature: onEachFeature,
             pointToLayer: function (feature, latlng){
