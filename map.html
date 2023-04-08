@@ -22,6 +22,9 @@
             height: 100%;
             width: 100%;
         }
+        .leaflet-popup-content {
+            font-size: 2em;
+        }
     </style>
 </head>
 <body>
@@ -30,7 +33,9 @@
 
         var osm = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
             maxZoom: 19,
-            attribution: '© OpenStreetMap'
+            attribution: '© OpenStreetMap',
+            tileSize: 512,
+            zoomOffset: -1
         });
 
     function onEachFeature(feature, layer) {
@@ -55,13 +60,19 @@
         prefix: 'fa'
     });
 
-        var breweries = new L. markerClusterGroup();
+        var breweries = new L. LayerGroup();
         L.geoJson(beermap, {
             onEachFeature: onEachFeature,
             pointToLayer: function (feature, latlng){
                return L.marker(latlng, {icon: beerMarker});
             }
         }).addTo(breweries);
+        var breweryMap = new L.markerClusterGroup({
+            iconCreateFunction: function(cluster) {
+                return L.divIcon({ html: '<h3>' + cluster.getChildCount() + '</h3>' });
+            }
+        });
+        breweries.addTo(breweryMap);
 
         var distilleries = new L.markerClusterGroup();
         L.geoJson(liquormap, {
@@ -82,7 +93,7 @@
         const map = L.map('map', {
 		center: [42.587880, -72.600260],
 		zoom: 10,
-		layers: [osm, breweries, distilleries, wineries]
+		layers: [osm, breweryMap, distilleries, wineries]
 	});
 
         const baseLayers = {
@@ -90,7 +101,7 @@
         };
 
     var overlayMaps = {
-    "Breweries": breweries,
+    "Breweries": breweryMap,
     "Distilleries": distilleries,
     "Wineries": wineries
 };
