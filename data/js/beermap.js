@@ -3920,6 +3920,22 @@ var beermap = {
           42.67179199997787
         ]
       }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Modestman Brewery",
+        "Location": {
+          "address": "100 Main St, Keene, NH 03431"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.277672,
+          42.931801
+        ]
+      }
     }
   ]
 }
