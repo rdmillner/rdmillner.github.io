@@ -30,7 +30,9 @@
 
         var osm = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
             maxZoom: 19,
-            attribution: '© OpenStreetMap'
+            attribution: '© OpenStreetMap',
+            tileSize: 512,
+            zoomOffset: -1
         });
 
     function onEachFeature(feature, layer) {
