@@ -199,6 +199,22 @@ var liquormap = {
             17.533532
           ]
         }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "GlenPharmer Distillery",
+            "Location": {
+            "Address": "860 W Central St, Franklin, MA 02038, United States",
+          }
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -71.432930,
+            42.090286
+          ]
+        }
       }
   ]
   }

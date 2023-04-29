@@ -3936,6 +3936,38 @@ var beermap = {
           42.931801
         ]
       }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Union Street Brewery",
+        "Location": {
+          "address": "36 Exchange Ter, Providence, RI 02903"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.413979,
+          41.825558
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Trinity Brewhouse",
+        "Location": {
+          "address": "186 Fountain St, Providence, RI 02903"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.416748,
+          41.822399
+        ]
+      }
     }
   ]
 }
