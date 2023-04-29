@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.css" />
     <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.Default.css" />    <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js" integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM=" crossorigin=""></script>
     <script src="plugins/Leaflet.awesome-markers/dist/leaflet.awesome-markers.min.js"></script>
-    <script src="https://kit.fontawesome.com/bc14952e14.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/bc14952e14.js" crossorigin="anonymous" data-auto-replace-svg="nest"></script>
     <script src="https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js"></script>
     <script src="data/js/beermap.js"></script>
     <script src="data/js/liquormap.js"></script>
@@ -69,7 +69,7 @@
         }).addTo(breweries);
         var breweryMap = new L.markerClusterGroup({
             iconCreateFunction: function(cluster) {
-                return L.divIcon({ html: '<h3>' + cluster.getChildCount() + '</h3>' });
+                return L.divIcon({ html: '<i class="fa beer-mug-empty">' + cluster.getChildCount() + '</i>' });
             }
         });
         breweries.addTo(breweryMap);
