@@ -1,6 +1,7 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Beer Map 2.0</title>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin=""/>
@@ -29,7 +30,13 @@
             margin-top: -1px;
             vertical-align: middle;
             padding: 10px;
+        }
+        .leaflet-control-layers-selector, .leaflet-touch .leaflet-bar a {
             font-size: 2rem;
+        }
+        .leaflet-touch .leaflet-control-layers-toggle {
+            width: 66px;
+            height: 66px;
         }
     </style>
 </head>
@@ -73,6 +80,8 @@
                return L.marker(latlng, {icon: beerMarker});
             }
         }).addTo(breweries);
+        var breweryLayer = "Breweries";
+        var breweryCount = breweries.length;
 
         var distilleries = new L.markerClusterGroup();
         L.geoJson(liquormap, {
@@ -81,6 +90,8 @@
                return L.marker(latlng, {icon: liquorMarker});
             }
         }).addTo(distilleries);
+        var distilleryLayer = "Distilleries";
+        var distilleryCount = distilleries.length;
 
         var wineries = new L.markerClusterGroup();
         L.geoJson(winemap, {
@@ -89,6 +100,8 @@
                return L.marker(latlng, {icon: wineMarker});
             }
         }).addTo(wineries);
+        var wineryLayer = "Wineries";
+        var wineryCount = wineries.length;
 
         const map = L.map('map', {
 		center: [42.587880, -72.600260],
