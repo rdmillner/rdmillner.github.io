@@ -3968,6 +3968,23 @@ var beermap = {
           41.822399
         ]
       }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Back Room Brewing",
+        "url": "https://thebackroombrewingcompany.com/",
+        "Location": {
+          "Address": "1046 Millers Falls Road, Northfield, Massachusetts 01360, United States            "
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.461502,
+          42.676601
+        ]
+      }
     }
-  ]
+]
 }

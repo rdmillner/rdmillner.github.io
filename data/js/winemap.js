@@ -120,6 +120,23 @@ var winemap = {
             42.698162
           ]
         }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Cameron's Winery",
+          "url": "https://cameronswinery.com/",
+          "Location": {
+            "Address": "1046 Millers Falls Road, Northfield, Massachusetts 01360, United States"
+          }
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -72.461502,
+            42.676601
+          ]
+        }
       }
   ]
 }
